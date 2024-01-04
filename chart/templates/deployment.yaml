@@ -36,8 +36,8 @@ spec:
           - name: TELE_TOKEN
             valueFROM:
               secretKeyRef:
-                key: token
-                name: kbot
+                key: {{ .Values.secret.tokenKey }}
+                name: { .Values.secret.name }}
           imagePullPolicy: {{ .Values.image.pullPolicy }}
           ports:
             - name: http

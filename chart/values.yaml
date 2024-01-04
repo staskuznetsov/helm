@@ -9,5 +9,8 @@ image:
   # Overrides the image tag whose default is the chart appVersion.
   tag: "a204398-amd64"
   arch: amd64
-  
+secret:
+  name: kbot
+  tokenKey: token
+  tokenName: TELE_TOKEN 
 
